@@ -45,10 +45,11 @@ jobs:
 
       - name: Build APK
         run: |
-          buildozer android debug
+          yes | buildozer android debug
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: trading-signal-apk
           path: bin/*.apk
+          if-no-files-found: error
