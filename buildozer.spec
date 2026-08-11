@@ -15,11 +15,14 @@ orientation = portrait
 fullscreen = 0
 
 android.permissions = INTERNET
-android.accept_sdk_license = True
+
 android.api = 35
-android.minapi = 21
+android.minapi = 23
 
 android.archs = arm64-v8a
+
+android.accept_sdk_license = True
+
 
 [buildozer]
 
